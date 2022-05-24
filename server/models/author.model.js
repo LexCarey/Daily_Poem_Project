@@ -1,13 +1,9 @@
 const mongoose= require("mongoose")
 
 const authorSchema = new mongoose.Schema({
-    firstName:{
+    fullName:{
         type:String,
-        required:[true, "author must have a first name"],
-    },
-    lastName:{
-        type:String,
-        required:[true, "author must have a last name"]
+        required:[true,"author must have a name"]
     },
     books:{
         type: String,
