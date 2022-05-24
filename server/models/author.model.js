@@ -5,10 +5,10 @@ const authorSchema = new mongoose.Schema({
         type:String,
         required:[true,"author must have a name"]
     },
-    books:{
+    books:[{
         type: String,
         required:[true, "author must have a book"]
-    },
+    }],
     about:{
         type:String,
         required:[true, "author must have an about"]
