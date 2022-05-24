@@ -1,0 +1,47 @@
+/* Background: #9cb5a4 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.navbar div {
+    text-align: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-color: #9cb5a4;
+    color: white;
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    opacity: 92%;
+}
+
+.options{
+    display: flex;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    transition: 350ms;
+    font-size: 21px;
+}
+
+.navbar input{
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-left: 25px;
+}
+
+.spacer{
+    height:83px;
+}

@@ -1,0 +1,15 @@
+.book-preview-img{
+    height: 200px;
+    width: 200px;
+
+}
+
+.book-preview-img img{
+    width:200px;
+    object-fit: contain;
+}
+
+.book-preview{
+    height: 300px;
+    width: 300px;
+}

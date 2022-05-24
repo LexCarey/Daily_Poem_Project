@@ -1,0 +1,21 @@
+.quote a{
+    color: black;
+}
+
+.quote a:hover{
+    transition: 350ms;
+    opacity: 80%;
+}
+
+.quote p {
+    font-size: 35px;
+    font-style: italic;
+}
+
+.quote {
+    padding: 25vh 0;
+}
+
+.high{
+    height: 2000px;
+}
