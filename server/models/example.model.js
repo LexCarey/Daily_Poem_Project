@@ -1,17 +1,20 @@
-const mongoose = require('mongoose');
+const mongoose= require("mongoose")
 
-const ExampleSchema = new mongoose.Schema({
-    PUT ATTRIBUTES HERE: {
+const authorSchema = new mongoose.Schema({
+    firstName:{
+        type:String,
+        required:[true, "author must have a first name"],
+    },
+    lastName:{
+        type:String,
+        required:[true, "author must have a last name"]
+    },
+    books:{
         type: String,
-        required: [
-            true,
-            'Atrribute is required'
-        ],
-        minlength: [
-            3,
-            'Name must be more than 3 characters.'
-        ]
+        required:[true, "author must have a book"]
     }
-}, { timestamps: true })
+})
 
-module.exports.Example = mongoose.model('Example', ExampleSchema);
+const Author = mongoose.model("author", authorSchema)
+
+module.exports=  Author
