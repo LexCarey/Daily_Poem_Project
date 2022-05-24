@@ -7,7 +7,7 @@ const Header = () => {
             <div className='navbar'>
                 <div class='contain'>
                     <div>
-                        <h1>Book Club</h1>
+                        <h1>Opus</h1>
                     </div>
                     <div className='options'>
                         <h3><a href="/store">Store</a> / <a href="/feed">Feed</a></h3>
