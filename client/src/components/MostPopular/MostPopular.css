@@ -1,4 +1,7 @@
 .most-popular{
     display: flex;
     flex-wrap: wrap;
+    margin: 35px auto 0;
+    max-width: 1500px;
+    justify-content: space-between;
 }

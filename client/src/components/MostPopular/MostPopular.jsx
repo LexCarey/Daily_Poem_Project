@@ -10,6 +10,21 @@ const MostPopular = () => {
             <h2>MOST POPULAR</h2>
             <div className='most-popular'>
                 <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
+                <BookPrev />
             </div>
         </div>
     )

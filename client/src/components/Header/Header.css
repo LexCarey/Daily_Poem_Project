@@ -12,14 +12,19 @@
 }
 
 .navbar {
-    display: flex;
-    padding: 20px;
-    justify-content: space-around;
+    padding: 20px 60px;
     background-color: #9cb5a4;
     color: white;
     position: fixed;
     top: 0; right: 0; left: 0;
     opacity: 92%;
+}
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .options{
