@@ -21,10 +21,6 @@ const MostPopular = () => {
                 <BookPrev />
                 <BookPrev />
                 <BookPrev />
-                <BookPrev />
-                <BookPrev />
-                <BookPrev />
-                <BookPrev />
             </div>
         </div>
     )
