@@ -8,6 +8,14 @@ const authorSchema = new mongoose.Schema({
     books:{
         type: String,
         required:[true, "author must have a book"]
+    },
+    about:{
+        type:String,
+        required:[true, "author must have an about"]
+    },
+    image:{
+        type:String,
+        required:[true, "author must have an image"]
     }
 })
 
