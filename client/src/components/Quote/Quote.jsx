@@ -3,6 +3,9 @@ import './Quote.css'
 
 const Quote = () => {
 
+    
+
+    //OPACITY WHEN SCROLLING
     const checkpoint = 380;
     let opacity = 1
     
