@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
-import './BookPrev.css'
+import React, {useEffect, useState} from 'react'
+import {useNavigate} from 'react-router-dom'
 
-const BookPrev = () => {
+const Serach = () => {
 
     const [book, setBook]=useState()
     const [searchTerm, setSearchTerm]=useState()
@@ -15,8 +15,9 @@ const BookPrev = () => {
         .catch(err=>console.log(err))
     })
 
-    return (
-        <div>
+  return (
+    <div>
+        <input type="text" placeholder='Search' onChange={e=>setSearchTerm(e.target.value)} />
         {
         book.filter((eachbook)=>{
             if(searchTerm==""){
@@ -33,7 +34,7 @@ const BookPrev = () => {
         })
     }
     </div>
-    )
+  )
 }
 
-export default BookPrev
+export default Serach
