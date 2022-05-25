@@ -31,20 +31,14 @@
     display: flex;
 }
 
-.navbar a{
+.store-links a{
     color: white;
     text-decoration: none;
 }
 
-.navbar a:hover{
+.store-links a:hover{
     transition: 350ms;
     font-size: 21px;
-}
-
-.navbar input{
-    padding: 5px 10px;
-    border-radius: 50px;
-    margin-left: 25px;
 }
 
 .spacer{

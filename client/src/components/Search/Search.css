@@ -1,0 +1,43 @@
+.autofill{
+    position: fixed;
+    top: 43px;
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    border: #687d6e 2px solid;
+    border-top: 0;
+    width: 220px;
+    margin-left:25px;
+    z-index: -1;
+    padding-top: 5px;
+    opacity: 100%;
+}
+
+.autofill .result a{
+    color: #687d6e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.autofill .result a:hover{
+    transition: 350ms;
+    color: #415146;
+}
+
+.result{
+    padding: 12px 10px;
+    border-top: solid #687d6e 1px;
+}
+
+.search-bar{
+    border: solid 2px #687d6e;
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-left: 25px;
+}
+
+.search-bar:focus{
+    border: solid 2px #374139;
+    outline: none;
+}

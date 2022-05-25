@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from '../Search/Search';
 import './Header.css';
 
 const Header = () => {
@@ -10,8 +11,8 @@ const Header = () => {
                         <h1>Opus</h1>
                     </div>
                     <div className='options'>
-                        <h3><a href="/store">Store</a> / <a href="/feed">Feed</a></h3>
-                        <input type="text" placeholder='Search' />
+                        <h3 className='store-links'><a href="/store">Store</a> / <a href="/feed">Feed</a></h3>
+                        <Search />
                     </div>
                 </div>
             </div>
@@ -22,3 +23,5 @@ const Header = () => {
 }
 
 export default Header
+
+// <input type="text" placeholder='Search' />
