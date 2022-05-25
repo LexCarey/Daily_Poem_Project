@@ -34,7 +34,7 @@ const Quote = () => {
                 quote&&
                 <div className='quote-container'>
                     <p>“{quote.quote}”</p>
-                    <h2>-<a href={`/authors/${quote.author}`}>{quote.author}</a>, <a href={`/book/${quote.book}`}>{quote.book}</a></h2>
+                    <h2>-<a href={`/authors/${quote.author}`}>{quote.author}</a>, <a href={`/books/${quote.book}`}>{quote.book}</a></h2>
                 </div>
             }
         </div>
