@@ -8,4 +8,5 @@ module.exports = (app) => {
     app.post("/api/quote", quoteController.createquote)
     app.put("/api/quote/:id", quoteController.updatequote)
     app.delete("/api/quote/:id", quoteController.deletequote)
+    app.get("/api/random-quote", quoteController.randomquote)
 }

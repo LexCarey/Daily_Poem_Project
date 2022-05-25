@@ -16,3 +16,19 @@
     width: 325px;
     margin-bottom: 25px;
 }
+
+.book-preview a{
+    color: black;
+    text-decoration: none;
+}
+
+.book-preview:hover{
+    transition: 350ms;
+    font-size: 18px;
+}
+
+.book-preview-img:hover{
+    transition: 350ms;
+    height: 275px;
+    width: 275px;
+}

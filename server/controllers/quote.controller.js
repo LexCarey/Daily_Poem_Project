@@ -38,3 +38,10 @@ module.exports.deletequote = (req, res)=>{
         .then(status=> res.json(status))
         .catch(err=>res.status(400).json(err))
 }
+
+// random
+module.exports.randomquote = (req, res)=>{
+    quote.aggregate([{ $sample: { size: 1 } }])
+        .then(quote=>res.json(quote))
+        .catch(err=>res.status(400).json(err))
+}

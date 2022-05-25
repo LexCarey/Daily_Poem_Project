@@ -16,6 +16,7 @@
     padding: 25vh 0;
 }
 
-.high{
-    height: 2000px;
+.quote-container{
+    max-width: 750px;
+    margin: 0 auto;
 }

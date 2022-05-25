@@ -1,9 +1,18 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 import './Quote.css'
 
 const Quote = () => {
+    const [quote, setQuote] = useState()
 
-    
+    useEffect(()=>{
+        axios.get('http://localhost:8000/api/random-quote')
+        .then(res => {
+            setQuote(res.data[0])
+            console.log(res.data[0])
+        })
+        .catch(err=>console.log(err))
+    }, [])
 
     //OPACITY WHEN SCROLLING
     const checkpoint = 380;
@@ -21,8 +30,13 @@ const Quote = () => {
 
     return (
         <div className='quote' id='quote'>
-            <p>“It does not do to dwell on dreams and forget to live.”</p>
-            <h2>-<a href="/author/J.K. Rowling">J.K. Rowling</a>, <a href="/book/Harry Potter and the Sorcerer's Stone">Harry Potter and the Sorcerer's Stone</a></h2>
+            {
+                quote&&
+                <div className='quote-container'>
+                    <p>“{quote.quote}”</p>
+                    <h2>-<a href={`/author/${quote.author}`}>{quote.author}</a>, <a href={`/book/${quote.book}`}>{quote.book}</a></h2>
+                </div>
+            }
         </div>
     )
 }
