@@ -9,7 +9,7 @@ module.exports.allauthor = (req, res)=>{
 
 // Get one
 module.exports.oneauthor = (req, res)=>{
-    author.findOne({_id: req.params.id})
+    author.findOne({fullName: req.params.name})
         .then(author => res.json(author))
         .catch(err=>res.status(400).json(err))
 }

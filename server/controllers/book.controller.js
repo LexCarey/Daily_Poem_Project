@@ -9,7 +9,7 @@ module.exports.allbook = (req, res)=>{
 
 // Get one
 module.exports.onebook = (req, res)=>{
-    book.findOne({_id: req.params.id})
+    book.findOne({title: req.params.title})
         .then(book => res.json(book))
         .catch(err=>res.status(400).json(err))
 }
