@@ -20,6 +20,9 @@ const bookSchema = new mongoose.Schema({
     },
     cover_art:{
         type: String,
+    },
+    buy_link:{
+        type: String,
     }
 })
 
