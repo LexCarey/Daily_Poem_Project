@@ -26,10 +26,11 @@ const Book = () => {
                         <img style={{height: '650px', marginRight: '15px'}} src={book.cover_art} alt="book cover" />
                         <div style={{textAlign: 'left', display: 'flex', flexFlow: 'column', justifyContent: 'end'}}>
                         <h1 style={{marginBottom: '15px', fontSize: '35px'}}>Title: {book.title}</h1>
+                            <h3>Author: </h3>
+                            <h2 style={{marginBottom: '15px'}}><a style={{color: 'black'}} href={`/authors/${book.author}`}>{book.author}</a></h2>
                             <h3>Description:</h3>
                             <h3 style={{marginBottom: '15px'}}>{book.description}</h3>
-                            <h3>Author: </h3>
-                            <h2><a style={{color: 'black'}} href={`/authors/${book.author}`}>{book.author}</a></h2>
+                            <a href={book.buy_link} target="_blank"><button style={{color: 'white', backgroundColor: 'black', padding: '5px 10px', borderRadius: '50px'}}>Buy Book</button></a>
                         </div>
                     </div>
                 }
