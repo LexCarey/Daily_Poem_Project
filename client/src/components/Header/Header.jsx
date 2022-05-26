@@ -1,6 +1,7 @@
 import React from 'react';
 import Search from '../Search/Search';
 import './Header.css';
+import {Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 const Header = () => {
     return (
@@ -14,6 +15,13 @@ const Header = () => {
                         <h3 className='store-links'><a href="/store">Store</a> / <a href="/feed">Feed</a></h3>
                         <Search />
                     </div>
+                    <Nav>
+                        <NavDropdown title="here lex">
+                            <NavDropdown.Item href="/about">About</NavDropdown.Item>
+                            <NavDropdown.Item href="/contact">Contact</NavDropdown.Item>
+                            <NavDropdown.Item href="/something">Something</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
                 </div>
             </div>
             <div className='spacer'>
