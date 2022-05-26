@@ -1,0 +1,32 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.footer{
+    background-color: #2f3f35;
+    color: white;
+    justify-content: space-between;
+    padding: 40px 60px;
+    box-shadow: 0 10px 25px 10px #1e2220;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+}
+
+.about{
+    justify-content: space-around;
+}
+
+.opus-tm{
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: #697e70 2px solid;
+}
+
+.footer span{
+    color: #616f66;
+}
+
+.footer-spacer{
+    height: 142px;
+}

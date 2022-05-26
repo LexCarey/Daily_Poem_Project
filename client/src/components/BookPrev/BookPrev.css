@@ -27,8 +27,13 @@
     font-size: 18px;
 }
 
-.book-preview-img:hover{
+.book-preview:hover .book-preview-img{
     transition: 350ms;
     height: 275px;
     width: 275px;
+}
+
+.book-preview:hover img {
+    transition: 340ms;
+    box-shadow: 0 0 15px 1px black ;
 }
