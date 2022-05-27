@@ -30,3 +30,20 @@
 .footer-spacer{
     height: 142px;
 }
+
+.about a{
+    color: white;
+    text-decoration: none;;
+}
+
+.footer img{
+    margin-top: 3px;
+    height: 20px;
+}
+
+.socials{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}

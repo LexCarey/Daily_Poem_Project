@@ -6,7 +6,7 @@
     border: #687d6e 2px solid;
     border-top: 0;
     width: 220px;
-    margin-left:25px;
+    margin-left: 25px;
     z-index: -1;
     padding-top: 5px;
     opacity: 100%;
@@ -34,7 +34,7 @@
     width: 200px;
     padding: 5px 10px;
     border-radius: 50px;
-    margin-left: 25px;
+    margin: 0 25px 0 25px;
 }
 
 .search-bar:focus{
